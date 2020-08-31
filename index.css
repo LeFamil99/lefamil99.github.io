@@ -33,9 +33,10 @@ body
 .navigation .main img{
     
     display: inline-block;
-    margin: 5px 15px;
+    margin: 5px 20px 5px 0;
     cursor: pointer;
-    height: 50px;
+    width: 115px
+
     
 }
 
