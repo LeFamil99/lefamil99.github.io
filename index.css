@@ -93,6 +93,44 @@ aside {
     height: calc(100vh - 125px);
     margin: 30px 0;
     width: 11vw;
+    min-width: 135px;
     position: fixed;
     border-right: 2px solid #747474
+}
+
+.display {
+    position: fixed;
+    margin: 0 0 0 calc(5vw + 135px);
+    width: calc(1200px - calc(5vw + 135px));
+    max-width: calc(100vw - calc(5vw + 135px));
+}
+
+.display h1 {
+    text-align: center;
+    margin: 25px 0;
+    min-width: 200px
+}
+
+.projet h2 {
+    padding-left: 5px;
+}
+
+#game_of_life embed {
+    border: 1px solid #114FE0
+}
+
+#game_of_life a {
+    color: black !important;
+    transition: font-size 0.07s linear
+}
+
+#game_of_life a:hover {
+    font-size: 17px;
+}
+
+.instructions {
+    text-align: right;
+    margin-bottom: 0px;
+    font-size: 10px;
+    color: #114FE0;
 }
