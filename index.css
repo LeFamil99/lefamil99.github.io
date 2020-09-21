@@ -1,11 +1,14 @@
-body
-{
+body {
     background-color: #E9E9E9;
-    margin: 0;
+    margin: 0px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .navigation {
     background-color: #797979;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
 }
 
 .navigation .main {
@@ -45,15 +48,16 @@ body
 }
 
 
-.projets{
+.projets {
     display: flex;
     width: 1200px;
-    margin: 0 auto
+    margin: 65px auto 0px auto;
+    max-width: calc(100vw - 20px)
 }
 
 .projets ul {
     padding: 7px 0 0 0;
-        font-size: 18px;
+    font-size: 18px;
 }
 
 .projets li {
@@ -99,7 +103,6 @@ aside {
 }
 
 .display {
-    position: fixed;
     margin: 0 0 0 calc(5vw + 135px);
     width: calc(1200px - calc(5vw + 135px));
     max-width: calc(100vw - calc(5vw + 135px));
@@ -116,15 +119,15 @@ aside {
 }
 
 #game_of_life embed {
-    border: 1px solid #114FE0
+    border: 1px solid #114FE0;
 }
 
-#game_of_life a {
+.projet a {
     color: black !important;
     transition: font-size 0.07s linear
 }
 
-#game_of_life a:hover {
+.projet a:hover {
     font-size: 17px;
 }
 
@@ -133,4 +136,8 @@ aside {
     margin-bottom: 0px;
     font-size: 10px;
     color: #114FE0;
+}
+
+.projet img {
+    width: calc(1200px - calc(5vw + 135px))
 }
